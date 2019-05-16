@@ -1,0 +1,44 @@
+ #title {
+    float:left;
+    color:gold;
+}
+
+#start {
+    float:right;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    padding:5px 5px;
+}
+h1 {
+    background-image: url("image2.jpg");
+    color:gold;
+}
+ .register {
+     background-image: url("background-images.jpg");
+     color:white;
+ }
+ body {
+     background-image: url("image3.jpg");
+ }
+
+ #others {
+ color:white;
+ }
+ 
+ footer {
+     color: red;
+ }
+ .signin {
+     background-color: coral;
+ }
+ .registerbtn {
+     color:white;
+     background-color: #4CAF50;
+     width: 10%;
+ }
+ .hoverbtn {
+    color:white;
+    background-color: #4CAF50;
+    width: 10%;  
+ }
