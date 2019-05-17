@@ -14,12 +14,12 @@ h1 {
     background-image: url("image2.jpg");
     color:gold;
 }
- .register {
+ #register {
      background-image: url("background-images.jpg");
      color:white;
  }
  body {
-     background-image: url("image3.jpg");
+     background-image: url("background-images.jpg");
  }
 
  #others {
@@ -32,7 +32,7 @@ h1 {
  .signin {
      background-color: coral;
  }
- .registerbtn {
+ #registerbtn {
      color:white;
      background-color: #4CAF50;
      width: 10%;
@@ -41,4 +41,7 @@ h1 {
     color:white;
     background-color: #4CAF50;
     width: 10%;  
+ }
+ a {
+     text-decoration:none;
  }
