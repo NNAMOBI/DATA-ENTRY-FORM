@@ -13,10 +13,12 @@
 h1 {
     background-image: url("image2.jpg");
     color:gold;
+    justify-content: flex-end;
 }
  #register {
      background-image: url("background-images.jpg");
      color:white;
+     justify-content: center;
  }
  body {
      background-image: url("background-images.jpg");
@@ -36,6 +38,10 @@ h1 {
      color:white;
      background-color: #4CAF50;
      width: 10%;
+     display: block;
+     width: 200px;
+     border: none;
+     height:30px;
  }
  .hoverbtn {
     color:white;
@@ -44,4 +50,12 @@ h1 {
  }
  a {
      text-decoration:none;
+ }
+
+ #page {
+     justify-content: center;
+ }
+
+ #heading {
+    justify-content: center;
  }
