@@ -2,6 +2,8 @@
 <html>
     <head>
         <link href="style.css" type="text/css" rel="stylesheet"> 
+        
+        <script type="text/javascript" src="script.js"></script>
          
         <title>dataform</title>
     </head>
@@ -11,27 +13,27 @@
             <div class="content">
             <h3>Registration</h3>
             <h3>New to specdesign.com? Register below.</h3><br>
-            <form action="/action_page.php" method="get">
-            First name:<input type="text" name="Firstname" value="" placeholder="Enter your first name" maxlength="12"><br>
-            <br>Last name:<input type="text" name="Lastname" value="" placeholder="Enter your Last name" maxlength="14"><br>
-            <br>Age:<input type"number" name"age" placeholder="Enter your age"><br>
-            <br>Email:<input type="password" name="password" placeholder="Enter your email"><br>
-            <br>Phone number:<input type="number" name="number" placeholder="Enter your phone number" maxlength="11"> (optional)<br>
-            </form>
+            <form>
+            First name:<input type="text" name="Firstname" id="firstName" value="" placeholder="Enter your first name"  required><br>
+            <br>Last name:<input type="text" name="Lastname" id="lastName" value="" placeholder="Enter your Last name"  required><br>
+            <br>Age:<input type"number" name"age" id="age" placeholder="Enter your age" required><br>
+            <br>Email:<input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+            <br>Phone number:<input type="number" name="number" placeholder="Enter your phone number"  required> (optional)<br>
+            
         
         </div>
         <div class="information">
         <br><h3>Protect your information with password</h3>
         <p>This will be your only nesabymakers.com password</p>
-        <form action="/action_page.php" method="get">
-        Enter your new password:<input type="password" name="password" placeholder="Enter your password"><br>
-        <br>Type it again:<input type="password" name="password" placeholder="Enter your password"><br>
-      </form>
+        
+        Enter your new password:<input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+        <br>confirm password:<input type="password" name="password" id="passwordcheck" placeholder="Enter your password" required><br>
+      
     </div>
 
     <div id="others">
         <br><h3>Others (specify)</h3>
-        <form action="/action_page.php" method="get">
+        
             Favourite fruits:<select name="fruits">
             <option value="" placeholder="enter your favourite fruits">-------------</option>
             <option value="apple">apple</option>
@@ -42,18 +44,19 @@
             </select><br>
             <br><input type="radio" name="agree" value="male" checked="checked">male<br>
             <br><input type="radio" name="agree" value="female"> female<br>
-            <br><input type="checkbox" name="agree" value="car" checked="checked">Terms and Conditions<br>
-            </form>
+            <br><input type="checkbox" name="agree" id="tandc" value="car" checked="checked" required>Terms and Conditions<br>
+            
             </div>
             
             <div>
-                    <form action="/action_page.php" method="get">
-                <button><em>Submit/Register</em></button><br>
-                <br><button class="registerbtn">Signup</button>
+                    
+                <button onclick="validateSignUp()"><em>Submit/Register</em></button><br>
+                <br>
                 <button class="hoverbtn">
                     <a href="signin.html">Signin</a></button>
-                </form>
+                
             </div>
+        </form>
             <footer>
                     <p>Posted by : NNAMDI</p>
                     <P>Contact Information:<a href="mailto:nnamosuagwu@yahoo.com">nnamosuagwu@yahoo.com</P>
